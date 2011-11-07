@@ -1,0 +1,15 @@
+README.txt
+setup.cfg
+setup.py
+zopyx/__init__.py
+zopyx.tinymceplugins.linktool.egg-info/PKG-INFO
+zopyx.tinymceplugins.linktool.egg-info/SOURCES.txt
+zopyx.tinymceplugins.linktool.egg-info/dependency_links.txt
+zopyx.tinymceplugins.linktool.egg-info/entry_points.txt
+zopyx.tinymceplugins.linktool.egg-info/namespace_packages.txt
+zopyx.tinymceplugins.linktool.egg-info/not-zip-safe
+zopyx.tinymceplugins.linktool.egg-info/paster_plugins.txt
+zopyx.tinymceplugins.linktool.egg-info/requires.txt
+zopyx.tinymceplugins.linktool.egg-info/top_level.txt
+zopyx/linktool/__init__.py
+zopyx/linktool/tests.py
