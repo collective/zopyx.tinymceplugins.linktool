@@ -1,0 +1,14 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="zopyx.authoring">
+
+    <browser:page
+      for="..interfaces.ILinkable"
+      permission="zope2.View"
+      name="metaInformation"
+      class=".linkable.MetaInformation"
+      template="linkable_metainformation.pt"
+    />
+
+</configure>
