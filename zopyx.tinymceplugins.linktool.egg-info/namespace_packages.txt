@@ -1,1 +1,2 @@
 zopyx
+zopyx.tinymceplugins

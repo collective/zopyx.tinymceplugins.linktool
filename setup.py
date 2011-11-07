@@ -25,6 +25,7 @@ setup(name='zopyx.tinymceplugins.linktool',
       zip_safe=False,
       install_requires=[
           'setuptools',
+          'lxml',
           # -*- Extra requirements: -*-
       ],
       entry_points="""

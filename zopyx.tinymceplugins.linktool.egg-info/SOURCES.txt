@@ -11,5 +11,9 @@ zopyx.tinymceplugins.linktool.egg-info/not-zip-safe
 zopyx.tinymceplugins.linktool.egg-info/paster_plugins.txt
 zopyx.tinymceplugins.linktool.egg-info/requires.txt
 zopyx.tinymceplugins.linktool.egg-info/top_level.txt
-zopyx/linktool/__init__.py
-zopyx/linktool/tests.py
+zopyx/tinymceplugins/__init__.py
+zopyx/tinymceplugins/linktool/__init__.py
+zopyx/tinymceplugins/linktool/interfaces.py
+zopyx/tinymceplugins/linktool/tests.py
+zopyx/tinymceplugins/linktool/subscribers/__init__.py
+zopyx/tinymceplugins/linktool/subscribers/linktool.py
