@@ -8,7 +8,9 @@
 
   <five:registerPackage package="." initialize=".initialize" />
   <cmf:registerDirectory name="linktool"/>
+
   <include package=".subscribers" />
+  <include package=".browser" />
 
   <class class="Products.ATContentTypes.content.document.ATDocument">
     <implements interface=".interfaces.ILinkable" />
