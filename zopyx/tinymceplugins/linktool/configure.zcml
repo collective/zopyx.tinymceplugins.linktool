@@ -8,7 +8,7 @@
 
   <five:registerPackage package="." initialize=".initialize" />
   <cmf:registerDirectory name="linktool"/>
-  <include package="subscribers" />
+  <include package=".subscribers" />
 
   <genericsetup:registerProfile
       name="default"

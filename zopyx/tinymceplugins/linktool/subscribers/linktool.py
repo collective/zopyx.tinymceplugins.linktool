@@ -20,7 +20,7 @@ def postEdit(event):
 
     # only modify text/html text fields (omit fields with reST etc.)
     if field.getContentType(obj) in ('text/html',):
-        T = Transformer(('addUUIDs',)
+        T = Transformer(['addUUIDs'])
         html = T(obj.getText(), input_encoding='utf-8')
         obj.setText(html)
         obj.setContentType('text/html')
