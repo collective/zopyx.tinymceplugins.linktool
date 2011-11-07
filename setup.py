@@ -25,7 +25,7 @@ setup(name='zopyx.tinymceplugins.linktool',
       zip_safe=False,
       install_requires=[
           'setuptools',
-          'lxml',
+          'zopyx.smartprintng.plone',
           # -*- Extra requirements: -*-
       ],
       entry_points="""

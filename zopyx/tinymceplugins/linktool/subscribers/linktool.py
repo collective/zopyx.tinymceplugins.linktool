@@ -4,7 +4,7 @@
 #####################################################################
 
 from ..interfaces import ILinkable
-from ..transforms import Transformer
+from zopyx.smartprintng.plone import Transformer
 
 _marker = object
 
