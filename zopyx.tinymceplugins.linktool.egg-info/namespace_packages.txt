@@ -1,2 +1,0 @@
-zopyx
-zopyx.tinymceplugins
