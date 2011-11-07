@@ -20,7 +20,7 @@ setup(name='zopyx.tinymceplugins.linktool',
       url='http://svn.plone.org/svn/collective/',
       license='GPL',
       packages=find_packages(exclude=['ez_setup']),
-      namespace_packages=['zopyx'],
+      namespace_packages=['zopyx', 'zopyx.tinymceplugins'],
       include_package_data=True,
       zip_safe=False,
       install_requires=[
