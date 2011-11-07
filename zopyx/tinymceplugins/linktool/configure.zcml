@@ -10,6 +10,10 @@
   <cmf:registerDirectory name="linktool"/>
   <include package=".subscribers" />
 
+  <class class="Products.ATContentTypes.content.document.ATDocument">
+    <implements interface=".interfaces.ILinkable" />
+  </class>
+
   <genericsetup:registerProfile
       name="default"
       title="zopyx.tinymceplugins.linktool"
