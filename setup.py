@@ -25,6 +25,7 @@ setup(name='zopyx.tinymceplugins.linktool',
       zip_safe=False,
       install_requires=[
           'setuptools',
+          'ordereddict',
           'zopyx.smartprintng.plone',
           # -*- Extra requirements: -*-
       ],

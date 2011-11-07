@@ -15,8 +15,6 @@ from Products.CMFCore.utils import getToolByName
 from zopyx.smartprintng.plone.browser.util import _findTextInNode, _findParentDocument
 from zopyx.smartprintng.plone import xpath_query
 
-import util
-
 import lxml.html
 
 class MetaInformation(BrowserView):

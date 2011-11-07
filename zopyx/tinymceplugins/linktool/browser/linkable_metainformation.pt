@@ -1,0 +1,90 @@
+<div tal:define="results view/getMetaInformation" 
+    class="panes" id="link-tool">
+
+    <div id="headings">
+        <h2>Structure</h2>
+        <div class="formHelp" tal:condition="not: results/documents" 
+             i18n:translate="label_nothing_found">Nothing found</div>
+        <div tal:repeat="doc results/documents" class="heading-level-1">
+            <tal:def define="metadata python: results['documents'][doc]['metadata']">
+                <div class="metadata-title">
+                    <img src="++resource++zopyx.authoring/link_ext.gif" />
+                    <a tal:attributes="href metadata/url;
+                                       title metadata/description"  
+                       target="_new"
+                       tal:content="string:${metadata/title} (${metadata/id})" />
+                    <div class="formHelp" tal:content="metadata/description" />
+            </tal:def>
+            <div tal:repeat="row python: results['documents'][doc]['headings']" class="item">
+                <a tal:attributes="href string:javascript:addLink('${row/target_url}', 'heading', '${row/id}'); 
+                                   class string:heading-level-${row/level}"
+                                   tal:content="string:H${row/level}: ${row/text}" 
+                />
+            </div>
+        </div>
+    </div>
+
+    <div id="images">
+        <h2>Images</h2>
+        <div class="formHelp" tal:condition="not: results/documents" 
+             i18n:translate="label_nothing_found">Nothing found</div>
+        <div tal:repeat="doc results/documents" class="heading-level-1">
+            <tal:def define="metadata python: results['documents'][doc]['metadata']">
+                <img src="++resource++zopyx.authoring/link_ext.gif" />
+                <a tal:attributes="href metadata/url;
+                                   title metadata/description"  
+                   target="_new"
+                   tal:content="string:${metadata/title} (${metadata/id})" />
+                <div class="formHelp" tal:content="metadata/description" />
+            </tal:def>
+            <div tal:repeat="row python: results['documents'][doc]['images']" class="item">
+                <a tal:attributes="href string:javascript:addLink('${row/target_url}', 'image', '${row/id}')">
+                    <img tal:attributes="src row/image_url" />
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="tables">
+        <h2>Tables</h2>
+        <div class="formHelp" tal:condition="not: results/documents" 
+             i18n:translate="label_nothing_found">Nothing found</div>
+        <div tal:repeat="doc results/documents" class="heading-level-1">
+            <tal:def define="metadata python: results['documents'][doc]['metadata']">
+                <img src="++resource++zopyx.authoring/link_ext.gif" />
+                <a tal:attributes="href metadata/url;
+                                   title metadata/description"  
+                   target="_new"
+                   tal:content="string:${metadata/title} (${metadata/id})" />
+                <div class="formHelp" tal:content="metadata/description" />
+            </tal:def>
+            <div tal:repeat="row python: results['documents'][doc]['tables']" class="item">
+                <a tal:attributes="href string:javascript:addLink('${row/target_url}', 'table', '${row/id}')" tal:content="row/caption" />
+            </div>
+        </div>
+    </div>
+
+    <div id="lists">
+        <h2>Lists</h2>
+        <div class="formHelp" tal:condition="not: results/documents" 
+             i18n:translate="label_nothing_found">Nothing found</div>
+        <div tal:repeat="doc results/documents" class="heading-level-1">
+            <tal:def define="metadata python: results['documents'][doc]['metadata']">
+                <div class="metadata-title">
+                    <img src="++resource++zopyx.authoring/link_ext.gif" />
+                    <a tal:attributes="href metadata/url;
+                                       title metadata/description"  
+                       target="_new"
+                       tal:content="string:${metadata/title} (${metadata/id})" />
+                    <div class="formHelp" tal:content="metadata/description" />
+            </tal:def>
+            <ul tal:repeat="lists python: results['documents'][doc]['lists']" class="list">
+                <li tal:repeat="list_item lists">
+                    <a tal:attributes="href string:javascript:addLink('${list_item/target_url}', 'listitem', '${list_item/id}')" 
+                       tal:content="list_item/text" />
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</div>
