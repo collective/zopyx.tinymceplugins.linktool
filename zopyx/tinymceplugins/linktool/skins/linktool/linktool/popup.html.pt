@@ -1,6 +1,6 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head tal:define="portal_url python: context.portal_url.getPortalObject().absolute_url()">
-	<title>Produce &amp; Publish Authoring Environment - LinkTool</title>
+	<title>LinkTool</title>
 	<script language="javascript" type="text/javascript" src="../../tiny_mce_popup.js"></script>
 	<!--[if gte IE 6]>
 	<script language="javascript" type="text/javascript" src="jscripts/excanvas.js"></script>
