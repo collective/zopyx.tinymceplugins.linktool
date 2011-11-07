@@ -1,0 +1,2 @@
+    var dom = tinyMCEPopup.editor.dom;
+    dom.removeClass(elm, 'internal-link');

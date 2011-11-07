@@ -1,0 +1,44 @@
+
+#linktool a:link {
+    border-bottom: 0;
+    color: black;
+    font-weight: bold;
+}
+
+.heading-level-1 {
+    margin-left: 1em;
+    margin-bottom: 1em;
+    font-size: 100%
+}
+
+.heading-level-2 {
+    margin-left: 2em;
+    font-size: 95%
+}
+
+.heading-level-3 {
+    margin-left: 3em;
+    font-size: 90%
+}
+
+.heading-level-4 {
+    margin-left: 4em;
+    font-size: 80%
+}
+
+.heading-level-5 {
+    margin-left: 5em;
+    font-size: 70%
+}
+
+#images .item {
+    margin-bottom: 1em;
+}
+
+.item {
+    margin-left: 1em;
+}
+
+.list {
+    margin-bottom: 1.5em;
+}
